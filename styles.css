@@ -20,6 +20,7 @@ body {
 header {
     background: #fff;
     height: 8vh;
+    border-bottom: 1px solid grey;
 }
 
 #container-div {
@@ -38,6 +39,21 @@ ul {
 li {
     margin: 0 10px;
     list-style: none;
+}
+
+li button {
+    border: none;
+    background: rgb(95, 95, 95);
+    color: #fff;
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+li button:hover {
+    background: rgb(177, 177, 177);
 }
 
 h1 {
