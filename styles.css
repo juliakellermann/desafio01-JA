@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,58 +12,81 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    /* background: url(whale.jpg) no-repeat; */
-    /* background-size: unset; */
+    background:  #fafafa;
     height: 100vh;
+    max-width: 1400px;
 }
 
 header {
-    max-width: 1400px;
-    margin: 0 auto;
+    background: #fff;
+    height: 8vh;
+}
 
+#container-div {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    height: 100%;
+}
+
+ul {
+    display: flex
+}
+
+li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Nanum Myeongjo';
+    font-size: 26px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;   
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    background-color: #2956D7aa;
-
 }
 
-header h1 {
-    /* max-width: 85px; */
-    color: #fff;
-    margin-left: 20px;
+#div1 {
+    width: 700px;
+    background: white;
 }
 
-header img {
-    width: 80px;
-    margin-right: 20px;
-    filter: brightness(0) invert(1);
+#div1 p {
+    text-align: initial;
+    font-size: 18px;
+    max-width: 95%;
+    margin: 15px;
 }
 
-div.container {
-    max-width: 700px;
-    margin: auto;
-
+#div1 #container-video {
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+}
+
+#div1 #container-video video {
+    max-width: 95%;
+}
+
+#div2 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-    padding: 0 30px;
-    color: #fff;
-    height: 70%
+    background: white;
 }
 
-div.container p {
-    line-height: 2.5;
-    font-weight: 100;
-    font-size: 22px;
+#div2 img {
+    width: 95px;
+    margin: 5px;
 }
 
-#background {
-    position: absolute;
-    top: 12%;
-    z-index: -1;
-    width: 100%;
-    height: 70%;
+#div2 img#first-image {
+    width: 150px;
 }
